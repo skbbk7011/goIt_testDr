@@ -1,0 +1,26 @@
+/*Contact*/
+.contact {
+  &-img {
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &-text {
+    text-align: center;
+
+    h3 {
+      margin: 20px 0 12px;
+    }
+  }
+  &-form {
+    background: $white;
+    border-radius: $border-radius-l;
+    margin: 80px auto;
+    padding: 60px;
+  }
+  &-btn {
+    display: block;
+    margin: 48px auto 0;
+  }
+}

@@ -1,0 +1,22 @@
+/*Benefits*/
+.benefits {
+  text-align: center;
+  padding: 60px 0 100px;
+
+  &-header {
+    margin: 24px 0 32px;
+  }
+  &-text {
+    max-width: 772px;
+    margin: 0 auto;
+  }
+  &-item {
+    &-text {
+      margin-top: 9px;
+
+      h3 {
+        margin-bottom: 34px;
+      }
+    }
+  }
+}

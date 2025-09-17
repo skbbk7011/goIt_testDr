@@ -1,0 +1,10 @@
+# file: ~/.gitignore_global
+.DS_Store
+.idea
+config.codekit3
+gulpfile.js
+js/
+jsWork/
+node_modules/
+package-lock.json
+package.json

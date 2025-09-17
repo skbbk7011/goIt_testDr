@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: $font-h-main;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Typography*/
+@each $i, $props in $heading-styles {
+  h#{$i} {
+    font-size: map-get($props, size);
+    font-weight: 600;
+    line-height: map-get($props, line);
+  }
+}
+
+.gradient {
+  background: linear-gradient(to right, $gradient-color-2, $gradient-color-1);
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 calc($gap / 2);
+}
+
+.row {
+  --g: #{$gap};
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--g);
+}
+
+[class^="col-"] {
+  min-width: 0;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    $p: calc(100% / $columns) * $i;
+    flex: 0 0 calc(#{$p} - var(--g));
+    max-width: calc(#{$p} - var(--g));
+  }
+}
+
+/*input*/
+.input {
+  appearance: none;
+  box-sizing: border-box;
+  border: 1px solid $blue;
+  border-radius: 8px;
+  color: $black;
+  height: 60px;
+  padding: 0 20px;
+  width: 100%;
+
+  &:focus {
+    border-color: $main-color;
+    outline: none;
+    box-shadow: none;
+  }
+  &-box {
+    margin-top: 24px;
+  }
+  &-label {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  &-error {
+    display: none;
+  }
+}
+
+/*Button*/
+.button {
+  text-decoration: none;
+  appearence: none;
+  background: $main-color;
+  color: $white;
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid $main-color;
+  border-radius: $border-radius-s;
+  cursor: pointer;
+  line-height: 21px;
+  font-size: $font-s-btn;
+  @include transition(all, .3s, ease);
+
+  &:hover {
+    background: transparent;
+    color: $main-color;
+  }
+}

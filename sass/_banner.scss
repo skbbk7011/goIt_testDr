@@ -1,0 +1,20 @@
+/*Banner*/
+.banner {
+  &-logo {
+    padding-top: 32px;
+  }
+  &-content {
+    background: $white;
+    border-radius: $border-radius-l;
+    padding: 60px;
+    margin: 65px 0 115px;
+  }
+  &-text {
+    margin: 24px 0 34px;
+  }
+  &-sub-title {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+}

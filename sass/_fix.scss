@@ -1,0 +1,35 @@
+@media (max-width: $media) {
+  .col-12,
+  .col-6,
+  .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .banner {
+    &-logo {
+      max-width: 60px;
+    }
+    &-bg {
+      background: none !important;
+    }
+    h1 {
+      font-size: 34px;
+      line-height: 45px;
+    }
+    &-content {
+      padding: 35px;
+    }
+    &-sub-title {
+      margin-bottom: 35px;
+    }
+  }
+
+  .benefits-header {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .contact-form {
+    padding: 35px;
+  }
+}

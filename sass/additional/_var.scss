@@ -1,0 +1,38 @@
+/*main color*/
+$main-color: #FF6B02;
+$white: #fff;
+$white2: #FCFEFE;
+$black: #1B1D1F;
+$blue: #005BBB;
+$blue-lt: #A5DEFF;
+$text: $black;
+
+/*Typography*/
+$font-family: 'Montserrat', sans-serif;
+$font-s-main: 16px;
+$font-h-main: 24px;
+$font-s-btn: $font-s-main;
+$heading-styles: (
+        1: (size: 64px, line: 72px),
+        2: (size: 48px, line: 72px),
+        3: (size: 24px, line: 24px)
+);
+
+/*gradient colors*/
+$gradient-color-1: $blue-lt;
+$gradient-color-2: $white2;
+
+/*body*/
+$container-width: 1169px;
+
+/*border-radius*/
+$border-radius-l: 40px;
+$border-radius-s: 8px;
+
+/*columns*/
+$container-width: 1200px;
+$gap: 30px;
+$columns: 12;
+
+/*It wasn’t part of the task, but I can’t sleep when something is broken and I know about it*/
+$media: 1200px;
