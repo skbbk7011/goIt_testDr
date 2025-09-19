@@ -1,4 +1,32 @@
-@media (max-width: $media) {
+@media (min-width: $media-xs) and (max-width: $media-md) {
+  .banner {
+    h1 {
+      font-size: 34px;
+      line-height: 45px;
+    }
+    &-content {
+      padding: 35px;
+    }
+    &-sub-title {
+      margin-bottom: 25px;
+    }
+  }
+
+  .benefits-header {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .contact-form {
+    padding: 35px;
+  }
+}
+
+@media (max-width: $media-xs) {
+  body {
+    font-size: 14px;
+  }
+
   .col-12,
   .col-6,
   .col-4 {
@@ -13,23 +41,23 @@
       background: none !important;
     }
     h1 {
-      font-size: 34px;
-      line-height: 45px;
+      font-size: 28px;
+      line-height: 38px;
     }
     &-content {
-      padding: 35px;
+      padding: 35px 15px;
     }
     &-sub-title {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
   }
 
   .benefits-header {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 28px;
   }
 
   .contact-form {
-    padding: 35px;
+    padding: 35px 15px;
   }
 }

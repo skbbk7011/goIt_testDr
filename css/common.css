@@ -74,6 +74,7 @@ table {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -303,7 +304,29 @@ h3 {
   pointer-events: none;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 720px) and (max-width: 1200px) {
+  .banner h1 {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .banner-content {
+    padding: 35px;
+  }
+  .banner-sub-title {
+    margin-bottom: 25px;
+  }
+  .benefits-header {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .contact-form {
+    padding: 35px;
+  }
+}
+@media (max-width: 720px) {
+  body {
+    font-size: 14px;
+  }
   .col-12,
   .col-6,
   .col-4 {
@@ -317,21 +340,21 @@ h3 {
     background: none !important;
   }
   .banner h1 {
-    font-size: 34px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 38px;
   }
   .banner-content {
-    padding: 35px;
+    padding: 35px 15px;
   }
   .banner-sub-title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   .benefits-header {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .contact-form {
-    padding: 35px;
+    padding: 35px 15px;
   }
 }
 /*# sourceMappingURL=common.css.map */
