@@ -340,8 +340,8 @@ h3 {
   .banner-logo {
     max-width: 60px;
   }
-  .banner-bg {
-    background: none !important;
+  .banner-img {
+    display: none;
   }
   .banner h1 {
     font-size: 28px;
