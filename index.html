@@ -5,15 +5,16 @@
     <title>Sofiia's goIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/common.css" rel="stylesheet">
+    <link rel="preload" href="img/gus-anim.gif" as="image">
 </head>
 <body>
 
 <!--Banner-->
 <section class="gradient banner">
-    <div class="banner-bg" style="background: url('./svg/gus-main.svg') no-repeat right/contain;">
+    <div class="banner-bg" style="background: url('img/svg/gus-main.svg') no-repeat right/contain;">
         <div class="container">
             <div class="banner-logo">
-                <img src="./svg/logo.svg" alt="gus" />
+                <img src="img/svg/logo.svg" alt="gus" />
             </div>
             <div class="row">
                 <div class="banner-content col-6">
@@ -21,7 +22,7 @@
                     <h1>Бандерогусь</h1>
                     <p class="banner-text">Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу.
                         Слава Україні!</p>
-                    <a href="#contact" id="contact-btn" class="button border-radius">Запустити гуся</a>
+                    <button id="go-to-form-btn" class="button border-radius">Запустити гуся</button>
                 </div>
             </div>
         </div>
@@ -33,14 +34,14 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img class="trezub" src="./svg/trezub.svg" alt="trezub" />
+                <img class="trezub" src="img/svg/trezub.svg" alt="trezub" />
                 <h2 class="benefits-header">Цікаві факти про бандерогусей</h2>
                 <p class="benefits-text">Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння.
                     Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами</p>
             </div>
             <div class="col-4">
                 <div class="benefits-item">
-                    <img class="benefits-img" src="./svg/fact1.svg" alt="gus" />
+                    <img class="benefits-img" src="img/svg/fact1.svg" alt="gus" />
                     <div class="benefits-item-text">
                         <h3>Система навігації</h3>
                         <p>Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть на етапі збірки</p>
@@ -49,7 +50,7 @@
             </div>
             <div class="col-4">
                 <div class="benefits-item">
-                    <img class="benefits-img" src="./svg/fact2.svg" alt="gus" />
+                    <img class="benefits-img" src="img/svg/fact2.svg" alt="gus" />
                     <div class="benefits-item-text">
                         <h3>Очі-тепловізори</h3>
                         <p>Допомагають виявити характер сигнатури об’єктів та значно підвищують точність удару</p>
@@ -58,7 +59,7 @@
             </div>
             <div class="col-4">
                 <div class="benefits-item">
-                    <img class="benefits-img" src="./svg/fact3.svg" alt="gus" />
+                    <img class="benefits-img" src="img/svg/fact3.svg" alt="gus" />
                     <div class="benefits-item-text">
                         <h3>Байракрила</h3>
                         <p>Можуть нести 2-4 керовані ракети, що вражають ціль на відстані «ніхріна собі» кілометрів</p>
@@ -75,26 +76,29 @@
         <div class="row">
             <div class="contact-form col-6">
                 <div class="contact-img">
-                    <img class="trezub" src="./svg/trezub.svg" alt="trezub" />
+                    <img class="trezub" src="img/svg/trezub.svg" alt="trezub" />
                 </div>
                 <div class="contact-text">
                     <h3>Поділися, будь ласка, поштою</h3>
                     <p>та запиши гуся до бандерозагону</p>
                 </div>
-                <form>
+                <form id="form" action="#">
                     <div class="input-box">
-                        <label for="name" class="input-label">Імʼя</label>
-                        <input type="text" id="name" name="name" class="input" />
+                        <label for="user-name" class="input-label">Імʼя</label>
+                        <input type="text" id="user-name" name="name" class="input" />
                     </div>
                     <div class="input-box">
-                        <label for="email" class="input-label">Імʼя</label>
-                        <input type="email" id="email" name="email" class="input" />
+                        <label for="user-email" class="input-label">Імʼя</label>
+                        <input type="email" id="user-email" name="email" class="input" />
                     </div>
-                    <button class="button contact-btn" onclick="alert('Ну я полетів!)')">Запустити гуся</button>
+                    <button class="button contact-btn" id="launch-btn">Запустити гуся</button>
                 </form>
             </div>
         </div>
     </div>
 </footer>
+
+<script src="js/form.js"></script>
+
 </body>
 </html>

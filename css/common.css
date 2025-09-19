@@ -291,6 +291,18 @@ h3 {
   margin: 48px auto 0;
 }
 
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
 @media (max-width: 1200px) {
   .col-12,
   .col-6,
