@@ -3,6 +3,10 @@
   &-logo {
     padding-top: 32px;
   }
+  &-img {
+    display: flex;
+    align-items: flex-end;
+  }
   &-content {
     background: $white;
     border-radius: $border-radius-l;

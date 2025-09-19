@@ -236,6 +236,10 @@ h3 {
 .banner-logo {
   padding-top: 32px;
 }
+.banner-img {
+  display: flex;
+  align-items: flex-end;
+}
 .banner-content {
   background: #fff;
   border-radius: 40px;
@@ -304,7 +308,7 @@ h3 {
   pointer-events: none;
 }
 
-@media (min-width: 720px) and (max-width: 1200px) {
+@media (min-width: 840px) and (max-width: 1200px) {
   .banner h1 {
     font-size: 34px;
     line-height: 45px;
@@ -323,7 +327,7 @@ h3 {
     padding: 35px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 840px) {
   body {
     font-size: 14px;
   }
